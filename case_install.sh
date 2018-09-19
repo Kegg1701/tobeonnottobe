@@ -20,7 +20,7 @@ sudo modprobe -r spidev
 
 sudo modprobe spi_s3c64xx force32b=1 && sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &&
 
-svn checkout https://github.com/Kegg1701/ORAN64CASE.git && sudo cp -R ORAN64CASE.git/trunk/ora-logo /usr/local/share/ &&
+svn checkout https://github.com/Kegg1701/tobeonnottobe.git && sudo cp -R tobeonnottobe.git/trunk/ora-logo /usr/local/share/ &&
 
 sudo mplayer -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 /usr/local/share/ora-logo/N64_logo.gif &> /dev/null
 
@@ -34,7 +34,7 @@ sudo mplayer -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 /usr/local/s
 	#fi
 #fi
 
-cd ORAN64CASE.git/trunk/
+cd tobeonnottobe.git/trunk/
 
 ## install/update n64case scripts
 
